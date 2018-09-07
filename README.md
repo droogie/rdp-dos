@@ -9,6 +9,9 @@ I did not spend much time investigating this, but I can make a guess at what is 
 
 If you're interested in the protocol: https://winprotocoldoc.blob.core.windows.net/productionwindowsarchives/MS-RDPBCGR/[MS-RDPBCGR].pdf
 
+# Clone
+> git clone --recurse-submodules https://github.com/droogie/rdp-dos
+
 
 # Build
 
