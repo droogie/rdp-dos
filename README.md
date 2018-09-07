@@ -16,11 +16,11 @@ This was verified on Ubuntu 18.04 and Kali 64bit... the shell script will instal
 
 Requires root to install dependencies... if you already have freerdp installed this will overwrite it.
 
-sh build.sh  
+> sh build.sh  
 
 # DoS
 
-tls: supply anything for credentials, does not matter...
+tls: supply anything for credentials, does not matter...<br>
 nla: requires valid credentials
 
-sh dos.sh <ip> <username> <password> <tls/nla>
+> sh dos.sh ip username password tls/nla
