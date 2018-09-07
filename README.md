@@ -2,7 +2,7 @@
 
 This is a denial of service against RDP tested on the latest Windows 10 Version 1803 (OS Build 17134.165)... this was also verified against Windows Insiders build for Win10 and Windows Server 2019.
 
-Machines that do not enforce NLA can be exploited without unknown credentials, where NLA enforced machines would require valid credentials to DoS.
+Machines that do not enforce NLA can be exploited with unknown credentials, where NLA enforced machines would require valid credentials to DoS.
 
 I did not spend much time investigating this, but I can make a guess at what is happening. I believe that the service receives a message from our client that it does not like and terminates our connection, but does not clean up and free the memory that was allocated. If you run this client in a loop you will see the memory usage climb exponentially until ultimately putting the machine into an out of memory state. This tends to BSOD instances running on VMware due to their graphics driver freaking out due to no memory available... 
 
