@@ -1,0 +1,11 @@
+--- transport-orig.c	2018-08-12 03:52:03.241041225 -0700
++++ transport.c	2018-08-12 03:52:33.348051871 -0700
+@@ -823,6 +823,8 @@
+ 	{
+ 		WLog_Packet(transport->log, WLOG_TRACE, Stream_Buffer(s), length,
+ 		            WLOG_PACKET_OUTBOUND);
++
++		winpr_HexDump("core.tcp", 2, Stream_Buffer(s), length);
+ 	}
+ 
+ 	while (length > 0)
